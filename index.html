@@ -1,73 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Contact form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <main>
+      <h2>Contact Us</h2>
+      <form action="">
+        <label>
+          First Name *
+          <input type="text" />
+        </label>
+        <span>This field is required</span>
+        <label>
+          Last Name *
+          <input type="text" />
+        </label>
+        <span>This field is required</span>
 
-  
-  </style>
-</head>
+        <label>
+          Email Address *
+          <input type="email" />
+        </label>
+        <span>Please enter a valid email address</span>
 
+        <fieldset>
+          <legend>Query Type</legend>
+          <label for="general" class="no-class">
+            <input type="radio" name="query_type" id="general" />
+            General Enquiry
+          </label>
+          <label for="support" class="no-class">
+            <input type="radio" name="query_type" id="support" />
+            Support Request
+          </label>
+        </fieldset>
+        <span>Please select a query type</span>
+        <label for="message">
+          Message *
+          <textarea name="" id="message"> </textarea>
+        </label>
+        <span>This field is required</span>
+        <label for="check" class="checkbox">
+          <input type="checkbox" id="check" />
+          I consent to being contacted by the team
+        </label>
+        <span>To submit this form, please consent to being contacted</span>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
 
-<main>
-  <h2>Contact Us</h2>
-  <form action="">
-    <label >
-      First Name *
-      <input type="text">
-    </label>
-    <span>This field is required</span>
-    <label>
-      Last Name *
-      <input type="text">
-    </label>
-    <span>This field is required</span>
-
-    <label >
-      Email Address *
-      <input type="email">
-    </label>
-    <span>Please enter a valid email address</span>
-    
-    <fieldset>
-      <legend>Query Type</legend>
-      <label for="general">
-        <input type="radio" name="query_type" id="general">
-        General Enquiry
-      </label>
-      <label for="support">
-        <input type="radio" name="query_type" id="support">
-        Support Request
-      </label>
-    </fieldset>
-    <span>Please select a query type</span>
-    <label for="Message">
-      Message *
-      <textarea name="" id="Message">
-
-      </textarea>
-    </label>
-    <span>This field is required</span>
-    <label for="check">
-      <input type="checkbox" id="check">
-      I consent to being contacted by the team
-    </label>
-    <span>To submit this form, please consent to being contacted</span>
-    <button type="submit">Submit</button>
-  </form>
-</main>
-  
-  
-
-  
-  
-  <!-- <div class="attribution">
+    <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-</body>
+  </body>
 </html>
